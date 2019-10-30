@@ -213,7 +213,7 @@ class Panel_admin_page_secure_courses extends MY_Controller{
         $table_name = $this->table_name;
         $upload_path = $this->upload_path;
 
-        $this->insert_db_img($inputs_array, $inputs_img_name, $success_link, $error_link, $upload_path ,$table_name);
+        $this->insert_db_img_file($inputs_array, $inputs_img_name, $success_link, $error_link, $upload_path ,$table_name);
 
 
 
