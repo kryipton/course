@@ -1,0 +1,373 @@
+.c_right{
+    width: 80%;
+    float: left;
+    margin-left: 40px;
+}
+
+.c_left{
+    float: left!important;
+}
+
+
+.c_module{
+    padding: 20px;
+}
+
+.previous i{
+    font-size: 20px;
+    margin-right: 6px;
+    color: rgb(152, 152, 152) !important;
+
+}
+
+.next i{
+    font-size: 20px;
+    margin-left: 6px;
+    color: rgb(152, 152, 152) !important;
+}
+
+.current{
+    font-size: 18px;
+    color: #29a599 !important;
+
+}
+
+.paginate_button {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+table tbody tr{
+    height: 73px!important;
+}
+
+table tbody tr td{
+    text-align: center!important;
+    vertical-align: middle!important;
+    /*max-width: 120px!important;*/
+
+}
+
+.dialog {
+    padding: 30px;
+    color: black;
+    position: fixed;
+    left: calc(50vw - (760px/2));
+    width: 800px!important;
+    max-height: 600px;
+    /*width: 100%;*/
+    height: 100%;
+    z-index: 1000;
+    background: white;
+    transform: scale(0);
+    /*overflow-y: scroll;*/
+    border-radius: 30px;
+    overflow-x: hidden;
+    transition: all .4s ease-in-out;
+    text-align: center;
+    box-shadow: 0px 0px 0px 650px rgba(128, 128, 128, 0.25);
+
+}
+
+.dialog2 {
+    padding: 30px;
+    color: black;
+    position: fixed;
+    left: calc(50vw - (760px/2));
+    width: 800px!important;
+    max-height: 600px;
+    /*width: 100%;*/
+    height: 100%;
+    z-index: 1000;
+    transform: scale(0);
+    /*overflow-y: scroll;*/
+    border-radius: 30px;
+    overflow-x: hidden;
+    transition: all .4s ease-in-out;
+    text-align: center;
+    box-shadow: 0px 0px 0px 650px rgba(128, 128, 128, 0.25);
+}
+
+.dialog.open {
+    background: white;
+    transform: scale(1.1);
+    top: 100px;
+}
+.dialog header {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+}
+.dialog p {
+    font-size: 1rem;
+}
+
+.dialog2.open {
+    background: white;
+    transform: scale(1.1);
+    top: 100px;
+}
+.dialog2 header {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+}
+.dialog2 p {
+    font-size: 1rem;
+}
+
+.btn-open {
+    padding: 30px 10px;
+    display: inline-block;
+    max-width: 500px;
+    max-height: 45px;
+    width: 100%;
+    color: #eee;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 7px;
+    position: absolute;
+    top: calc(50% - (45px/2));
+    left: calc(50% - 110px);
+    z-index: 100;
+}
+.btn-close {
+    position: relative;
+    top: -15px;
+    left: 365px;
+    color: black!important;
+}
+.btn-close:after {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: black;
+    content: '\2715';
+    line-height: 1.2;
+}
+
+
+.c_head th{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+
+.c_form_control{
+    width: 620px!important;
+}
+
+.c_span2{
+    width: 20%;
+    padding: 0!important;
+    margin: 0!important;
+    margin-left: 50px!important;
+}
+
+
+.c_span10{
+    width: 75%;
+    padding: 0!important;
+    margin-left: 20px!important;
+}
+
+.paginate_button {
+    margin-left: 6px;
+}
+
+
+#datatable_length label select{
+    width: 60px!important;
+}
+
+.c_delete_all{
+    padding: 2px 5px!important;
+    margin-left: 7px;
+}
+
+.c_check_all{
+    margin-right: 4px!important;
+}
+
+.row_color{
+    background-color: #26a69a;
+}
+
+
+.c_head th:nth-child(1){
+    /*width: 10px!important;*/
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+}
+
+
+
+tbody tr td:nth-child(1){
+    /*width: 10px!important;*/
+    /*padding-left: 4px!important;*/
+    /*padding-right: 4px!important;*/
+}
+
+.c_head th:first-child{
+    /*width: 5px!important;*/
+}
+
+tbody tr td:first-child{
+    /*width: 5px!important;*/
+}
+
+.c_switch{
+
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+#datatable_wrapper{
+    overflow: visible;
+    padding-bottom: 30px;
+}
+
+.c_label_thead{
+    display: inline!important;
+    margin-top: 20px!important;
+}
+
+#c_span_whole{
+    top: 10px;
+    left: 16px;
+}
+
+.select-wrapper{
+    width: 55px;
+}
+
+#datatable_wrapper{
+    margin-top: 6px!important;
+}
+
+th{
+    vertical-align: middle!important;
+}
+
+#datatable_filter{
+    width: 244px;
+}
+
+#datatable{
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.is-selected{
+    border-radius: 0!important;
+}
+
+
+.nav {
+    height: 54px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+
+
+@media (max-width:6000px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+i{
+  color: white!important;
+}
+
+.dataTables_filter{
+    width: 243px!important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+label{
+    color: black!important;
+}
