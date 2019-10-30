@@ -8,8 +8,9 @@ $(document).ready(function(e){
         "lengthMenu": [3, 5, 10, 25, 50, 75, 100, 200],
         "order": [[0, "desc" ]],
         "ajax":{
-            url :  base_url,
-            type : 'POST',
+            "url" :  base_url,
+            "type" : 'POST',
+            "dataSrc": ""
         },
         "language": {
             "paginate": {
