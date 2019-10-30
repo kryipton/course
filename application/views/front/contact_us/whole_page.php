@@ -48,32 +48,13 @@
                 </div>
             </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="copy_txt">
-                                <p class="mar-0 white">&copy; Copyright 2018 - Padhai All rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="follow_us pull-right">
-                                <ul class="social_icons">
-                                    <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
         </div>
 
     </div>
 
 </section>
 <!--* End Contact*-->
+
 
 
 

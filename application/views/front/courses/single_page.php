@@ -45,10 +45,10 @@
                                 <div class="col-md-5">
                                     <div class="mailpoet_form" style="padding-top: 0">
                                        <div class="button">
-                                           <a href="#c_apply" class="mt_btn_purple"><?php echo $this->lang->line("muraciet"); ?>Muraciet</a>
+                                           <a href="#c_apply" class="mt_btn_purple"><?php echo $this->lang->line("muraciet"); ?></a>
 
                                            <?php if($course["file_name"] != "Məlumat Yoxdur") {?>
-                                               <a  download href="<?php echo base_url("uploads/courses/$course[file_name]")?>" class="mt_btn_purple"><?php echo $this->lang->line("kataloq yukle"); ?>kataloq yukle</a>
+                                               <a  download href="<?php echo base_url("uploads/courses/$course[file_name]")?>" class="mt_btn_purple"><?php echo $this->lang->line("kataloq_yukle"); ?></a>
                                            <?php }?>
                                        </div>
                                     </div>
@@ -65,11 +65,11 @@
                         <div class="nav-content-c">
 
                             <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#home">istirakcilar</a></li>
-                                <li><a data-toggle="tab" href="#menu1">kurs haqqinda</a></li>
-                                <li><a data-toggle="tab" href="#menu2">proqram</a></li>
-                                <li><a data-toggle="tab" href="#menu3">muellimler</a></li>
-                                <li><a data-toggle="tab" href="#menu4">is tecrubesi</a></li>
+                                <li class="active"><a data-toggle="tab" href="#home"><?php echo $this->lang->line("istirakcilar"); ?></a></li>
+                                <li><a data-toggle="tab" href="#menu1"><?php echo $this->lang->line("umumi_melumat"); ?></a></li>
+                                <li><a data-toggle="tab" href="#menu2"><?php echo $this->lang->line("proqram"); ?></a></li>
+                                <li><a data-toggle="tab" href="#menu3"><?php echo $this->lang->line("muellimler"); ?></a></li>
+                                <li><a data-toggle="tab" href="#menu4"><?php echo $this->lang->line("is_tecrubesi"); ?></a></li>
                             </ul>
 
                             <div class="tab-content">
@@ -212,7 +212,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="apply-form" id="c_apply">
-                                            <h4>Muraciet formu</h4>
+                                            <h4><?php echo $this->lang->line("muraciet_formu"); ?></h4>
 
                                             <?php if (!empty($this->session->flashdata("alert"))){?>
 
@@ -229,17 +229,17 @@
                                             <?php }?>
 
                                             <form action="<?php echo base_url("az/Course_join/$course[id]")?>" method="POST">
-                                                <p><input required class="form-control" name="name_surname" type="text" placeholder="Ad soyad"></p>
-                                                <p><input required class="form-control" name="phone" type="tel" placeholder="Telefon"></p>
-                                                <p><input required class="form-control" name="email" type="email" placeholder="Email"></p>
-                                                <p><textarea style="height: 85px" name="text" class="form-control" rows="5" id="comment" placeholder="Mesajiniz"></textarea></p>
-                                                <p><input type="submit" value="Gonder" class="submit"></p>
+                                                <p><input required class="form-control" name="name_surname" type="text" placeholder="<?php echo $this->lang->line("ad_soyad"); ?>"></p>
+                                                <p><input required class="form-control" name="phone" type="tel" placeholder="<?php echo $this->lang->line("telefon"); ?>"></p>
+                                                <p><input required class="form-control" name="email" type="email" placeholder="<?php echo $this->lang->line("mail"); ?>"></p>
+                                                <p><textarea style="height: 85px" name="text" class="form-control" rows="5" id="comment" placeholder="<?php echo $this->lang->line("mesajiniz"); ?>"></textarea></p>
+                                                <p><input type="submit" value="<?php echo $this->lang->line("gonder"); ?>" class="submit"></p>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <div class="locate-map">
-                                            <h4>Location</h4>
+                                            <h4><?php echo $this->lang->line("lokasiya"); ?></h4>
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145092.25223378316!2d-73.90911109726638!3d40.697319496210085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C+NY%2C+USA!5e0!3m2!1sen!2snp!4v1551785935214" width="200" height="425" style="border:0" allowfullscreen></iframe>
                                         </div>
                                     </div>

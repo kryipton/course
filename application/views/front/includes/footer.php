@@ -7,6 +7,7 @@
         <div class="row">
             <div class="container  ">
 
+
                 <!--                        <div class="row">-->
 
                 <div class="footerLogo ">
@@ -61,6 +62,20 @@
                 </div>
                 <!--                        </div>-->
                 <hr>
+
+                <div id="mt_footer" style="margin-right: 450px; margin-left: 450px;"  >
+
+                    <div class="follow_us pull-right">
+                        <ul class="social_icons">
+                            <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
             </div>
         </div>
     </div>

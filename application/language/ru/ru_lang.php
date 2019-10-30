@@ -54,9 +54,24 @@ $lang["etrafli"] = "более";
 $lang["footer"] = "&copy; 2019. Все права защищены.";
 
 $lang["umumi_melumat"] = "Общая информация";
-$lang["umumi_melumat"] = "Общая информация";
 
 
 //uzerinde islemek lazimdi
-$lang["merkez"] = "Mərkəz ru";
-$lang["mezun_karyera"] = "Məzun Karyera ru";
+$lang["merkez"] = "Центр";
+$lang["mezun_karyera"] = "Карьера Bыпускника";
+$lang["muraciet"] = "Применять";
+$lang["kataloq_yukle"] = "Скачать каталог";
+$lang["istirakcilar"] = "Участники";
+$lang["proqram"] = "Программа";
+$lang["is_tecrubesi"] = "Опыт работы";
+$lang["muraciet_formu"] = "Форма заявки";
+$lang["ad_soyad"] = "Имя Фамилия";
+$lang["telefon"] = "Контактный номер";
+$lang["mail"] = "Э-почта";
+$lang["mesajiniz"] = "Ваше сообщение";
+$lang["gonder"] = "Отправить";
+$lang["lokasiya"] = "Место нахождения";
+
+
+
+

@@ -55,5 +55,21 @@ $lang["umumi_melumat"] = "General information";
 
 //uzerinde islemek lazimdi
 $lang["merkez"] = "Center";
-$lang["mezun_karyera"] = "Məzun Karyera en";
+$lang["mezun_karyera"] = "Graduate Career";
+$lang["muraciet"] = "Apply";
+$lang["kataloq_yukle"] = "Download catalog ";
+$lang["istirakcilar"] = "Participants";
+$lang["proqram"] = "Program";
+$lang["is_tecrubesi"] = "Work experience";
+$lang["muraciet_formu"] = "Application form";
+$lang["ad_soyad"] = "Name Surname";
+$lang["telefon"] = "Contact number";
+$lang["mail"] = "Email";
+$lang["mesajiniz"] = "Your message";
+$lang["gonder"] = "Send";
+$lang["lokasiya"] = "Location";
+
+
+
+
 

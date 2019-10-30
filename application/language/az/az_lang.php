@@ -53,6 +53,18 @@ $lang["umumi_melumat"] = "Ümumi məlumat";
 //uzerinde islemek lazimdi
 $lang["merkez"] = "Mərkəz";
 $lang["mezun_karyera"] = "Məzun Karyera";
+$lang["muraciet"] = "Müraciət et";
+$lang["kataloq_yukle"] = "Kataloq yüklə";
+$lang["istirakcilar"] = "İştirakçılar";
+$lang["proqram"] = "Proqram";
+$lang["is_tecrubesi"] = "İş təcrübəsi";
+$lang["muraciet_formu"] = "Müraciət formu";
+$lang["ad_soyad"] = "Ad Soyad";
+$lang["telefon"] = "Əlaqə nömrəsi";
+$lang["mail"] = "E-poçt";
+$lang["mesajiniz"] = "Mesajınız";
+$lang["gonder"] = "Göndər";
+$lang["lokasiya"] = "Yer";
 
 
 
