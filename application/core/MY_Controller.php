@@ -44,6 +44,110 @@ class MY_Controller extends CI_Controller{
             $additional_id  = substr($value, 0, 9);
             $additional_img  = substr($value, 0, 8);
             $additional_editor  = substr($value, 0,8);
+
+//          inputlarin arrayinde gelen deyerin uzunluqu 9 dan boyukdurse bu if e kecir (eger 9 hrefden boyukdurse demeli "not_input" yazilmis ola biler )
+            if (strlen($value) > 9){
+
+//              eger inputun ilk 9 herfi "not_input" dursa onu postnan cagirmir sadece default deyer kimi goturur
+                if ($additional_id != "not_input"){
+
+                    if ($additional_editor == "(editor)"){
+                        $value = substr($value, 8);
+                        $post_data = $this->input->post($value);
+                    }else{
+                        $post_data = strip_tags($this->input->post($value));
+                    }
+
+                }else{
+                    $post_data = substr($value, 9);
+                }
+
+            }else{
+                if (strlen($value) != 0){
+                    if ($additional_editor == "(editor)"){
+                        $value = substr($value, 8);
+                        $post_data = $this->input->post($value);
+                    }else{
+                        $post_data = strip_tags($this->input->post($value));
+                    }
+                }
+            }
+
+//          eger sekil upload olunsa sekilin name-ni db ya add ele eks halda default sekil add ele
+            if ($additional_img == "img_name"){
+                $this->img_key = $key;
+            }
+
+
+//          eger post data bosdursa cond 0 olsun
+            if (empty($post_data) && $additional_img != "img_name"){
+                $cond = 0;
+            }
+
+//          modele gonderilecek data nin doldurulmasi
+            $data[$key] = $post_data;
+
+        }
+
+
+        if ($cond == 1){
+
+            $is_upload = $this->upload->do_upload($inputs_img_name);
+            if ($is_upload){
+                $post_data = $this->upload->data('file_name');
+            }else{
+                $post_data = "default.png";
+            }
+
+            $data[$this->img_key] = $post_data;
+
+        }
+
+//      eyer cond 1 dise succes linke success alerti ile birlikde redirect edir
+        if ($cond == 1){
+
+//          core ucun modelde yazilmis xususi insert metodu
+            $this->Model_for_core->core_add($data, $table_name);
+
+            $this->session->set_flashdata("success", "Məlumat Əlavə Edildi!");
+            redirect($success_link);
+
+//      eyer cond 0 dise error linke error alerti ile birlikde redirect edir
+        }else{
+            $this->session->set_flashdata("alert", "Boşluq Buraxmayın!");
+            redirect($error_link);
+        }
+
+
+    }
+
+    public function insert_db_img_file($inputs_array, $inputs_img_name, $success_link, $error_link, $upload_path, $table_name){
+
+
+
+//      sekiller upload edilir
+        $config['upload_path'] = $upload_path;
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        $config['file_name'] = $_FILES[$inputs_img_name]['name'];
+
+        $this->load->library('upload',$config);
+        $this->upload->initialize($config);
+//      sekiller upload edilir
+
+
+//      post metoduynan qebul edilen deyerler bu arrayin icine toplanir ve data olaraq db ya insert olur
+        $data = array();
+
+//      eyer cond 1 dise proses ugurla basa catib eger 0 qaytarirsa demeli prosesde xeta var ve geri seyfeye aler sessionla birlikde qayidir
+        $cond = 1;
+
+//      type text ve password olan inputlarin namelerinin arraylari fore eache salinaraq data arrayina doldurulur(xususi filterler metodlardan kecerek)
+        foreach ($inputs_array as $key => $value){
+
+//          inputlarin arrayinin icinde gelen deyerin ilk 9 herfi "not_input" dursa demeli o input deyil manual deyer olaraq qebul edilir
+            $additional_id  = substr($value, 0, 9);
+            $additional_img  = substr($value, 0, 8);
+            $additional_editor  = substr($value, 0,8);
             $additional_file  = substr($value, 0,6);
 
 //          inputlarin arrayinde gelen deyerin uzunluqu 9 dan boyukdurse bu if e kecir (eger 9 hrefden boyukdurse demeli "not_input" yazilmis ola biler )
